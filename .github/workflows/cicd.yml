@@ -56,7 +56,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context:
-          file: ./Dockerfile
+          file: ./DockerFile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/github-action-docker-demo:latest
       # Step5: Display the image digest
